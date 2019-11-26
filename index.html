@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>The first implementation</h2>
+
+<p id="demo"></p>
+
+<script>
+    
+//var x = document.getElementById("frm1");
+
+    var value = 100;
+    var div1 = 3;
+    var div2 = 4;
+    var text="";
+
+    for (var i = 1; i <= value; i++) {
+
+        if (i % div1 == 0 && i % div2 == 0) {
+
+          text += "Bish-Bosh" + ", ";
+
+        } else if (i % div1 == 0) {
+
+            text+="Bish" + ", ";        
+
+        } else if (i % div2 == 0) {
+
+            text+="Bosh" + ", ";
+
+        } else {
+
+          text+=i + ", "; 
+
+        }       
+
+    }
+
+    //document.getElementById("demo").innerHTML = text;
+    
+    console.log(text);
+    
+</script>
+
+
+ 
+
+</body>
+</html> 

@@ -1,0 +1,69 @@
+body {
+
+  background: #01DFD7;
+
+}
+
+header{
+
+  top:10px;
+  width: 100%;
+  height:100px;
+  text-align: center;
+
+}
+
+header h1{
+
+  font-size: 50px;
+  color:red;
+
+}
+
+#container {
+
+  display:inline-block;
+
+  left:33%;
+
+  right: 33%;
+
+  position: absolute;
+
+  align-content: center;
+
+}
+
+#demo{
+
+  margin-bottom: 100px;
+
+
+
+}
+
+footer{
+
+  text-align: center;
+
+  display:inline-block;
+
+  height:50px;
+
+  width:100%;
+
+  bottom: 0px;
+
+  left:0px;
+
+  right:0px;
+
+  position:fixed;
+
+}
+
+#text{
+    
+color:blue;
+
+}
