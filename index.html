@@ -5,52 +5,46 @@
 <head>
 
     <meta charset="UTF-8">
-
     <title>Bish-Bosh 2.0</title>
-
     <link rel="stylesheet" type="text/css" href="style.css">
-
     <script src="bishbosh.js"></script>
+    
+     <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
 </head>
 
 <header>
-
+    <br/>
+    <br/>
     <h1>Bish-Bosh 2.0</h1>
 
 </header>
 
-<body>
-
+<body class="bg-info" >
     <div id="container">
-
         <div id="syfte">
 
-            <h3>A brief text explaining the concept of the application</h3>
-
-            <p> Loop value is the value range you want to operate on.</p>
-
-            <p>The first division value will divide the current loop value, and if it is evenly divided it will display "Bish"</p>
-
-            <p>The second divisionvalue will divide the current loop value, and if it is evenly divided it will display "Bosh"</p>
-
-            <p>If both first and second value is evenly divided the it will show "Bish-Bosh". If none of the conditions are met, loop value number will be shown.</p>
+            <br/>
+            <br/>
+            <h3>A brief explaining the concept of the application</h3>
+            <p class="mt-4 text-justify"> Loop value is the value range you want to operate on. The first division value will divide the current loop value, and if it is evenly divided it will display "Bish". The second divisionvalue will divide the current loop value, and if it is evenly divided it will display "Bosh". If both first and second value is evenly divided then it will show "Bish-Bosh". If none of the conditions are met, loop value number will be shown.</p>
 
         </div>
 
-        <form id="frm1" action="form_action.asp">
-
-            <br><br> Loop value: <br><input type="number" name="value" min="1" max="1000" >
-            
-            <br><br> First division value: <br><input type="number" name="div1"  min="1" max="100">
-
-            <br><br> Second division value: <br><input type="number" name="div2"  min="1" max="100"><br>
+       <h4>Application</h4>
+       <br>
+        <form id="f" action="form_action.asp">
+            Loop value: <input type="number" name="value" min="1" max="1000" >    
+            <br><br> First division value: <input type="number" name="div1"  min="1" max="100">
+            <br><br> Second division value: <input type="number" name="div2"  min="1" max="100"><br>
 
         </form>
 
         <br>
         <button onclick="myFunction()">Result</button>
-
+        <br/>
+        <br/>
         <div id = text>
         <p id="demo">
             
@@ -63,9 +57,7 @@
 
 
 <footer>
-
     <small>© Copyright 2019, Sara Binazir <a href="mailto:someone@example.com">sarabinazir@gmail.com</a></small>
-
 </footer>
 
 
