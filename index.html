@@ -1,50 +1,72 @@
 <!DOCTYPE html>
-<html>
+
+<html xmlns="http://www.w3.org/1999/xhtml" lang="sv-SE">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <title>Bish-Bosh 2.0</title>
+
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+    <script src="bishbosh.js"></script>
+
+</head>
+
+<header>
+
+    <h1>Bish-Bosh 2.0</h1>
+
+</header>
+
 <body>
 
-<h2>The first implementation</h2>
+    <div id="container">
 
-<p id="demo"></p>
+        <div id="syfte">
 
-<script>
-    
-//var x = document.getElementById("frm1");
+            <h3>A brief text explaining the concept of the application</h3>
 
-    var value = 100;
-    var div1 = 3;
-    var div2 = 4;
-    var text="";
+            <p> Loop value is the value range you want to operate on.</p>
 
-    for (var i = 1; i <= value; i++) {
+            <p>The first division value will divide the current loop value, and if it is evenly divided it will display "Bish"</p>
 
-        if (i % div1 == 0 && i % div2 == 0) {
+            <p>The second divisionvalue will divide the current loop value, and if it is evenly divided it will display "Bosh"</p>
 
-          text += "Bish-Bosh" + ", ";
+            <p>If both first and second value is evenly divided the it will show "Bish-Bosh". If none of the conditions are met, loop value number will be shown.</p>
 
-        } else if (i % div1 == 0) {
+        </div>
 
-            text+="Bish" + ", ";        
+        <form id="frm1" action="form_action.asp">
 
-        } else if (i % div2 == 0) {
+            <br><br> Loop value: <br><input type="number" name="value" min="1" max="1000" >
+            
+            <br><br> First division value: <br><input type="number" name="div1"  min="1" max="100">
 
-            text+="Bosh" + ", ";
+            <br><br> Second division value: <br><input type="number" name="div2"  min="1" max="100"><br>
 
-        } else {
+        </form>
 
-          text+=i + ", "; 
+        <br>
+        <button onclick="myFunction()">Result</button>
 
-        }       
+        <div id = text>
+        <p id="demo">
+            
+        </p>      
+        </div>
 
-    }
-
-    //document.getElementById("demo").innerHTML = text;
-    
-    console.log(text);
-    
-</script>
-
-
- 
+    </div>
 
 </body>
-</html> 
+
+
+<footer>
+
+    <small>© Copyright 2019, Sara Binazir <a href="mailto:someone@example.com">sarabinazir@gmail.com</a></small>
+
+</footer>
+
+
+</html>
